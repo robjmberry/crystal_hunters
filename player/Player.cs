@@ -5,7 +5,7 @@ namespace crystalhunters.player;
 
 public partial class Player : CharacterBody2D
 {
-    [Export] public float MoveSpeed { get; set; } = 400;
+    [Export] public float MoveSpeed { get; set; } = 401;
     [Export] public float Acceleration { get; set; } = 50;
     [Export] public float Breaking { get; set; } = 20;
     [Export] public float JumpHeight { get; set; } = 220;

@@ -1,34 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://bmq4cae7msgpi"]
+[gd_scene load_steps=5 format=3 uid="uid://bmq4cae7msgpi"]
 
 [ext_resource type="Script" uid="uid://4daued7iruyv" path="res://player/Player.cs" id="1_rkbax"]
 [ext_resource type="Script" uid="uid://cydxih42h06xr" path="res://player/jump_arc_visual.gd" id="2_rkbax"]
+[ext_resource type="Texture2D" uid="uid://c3wcvxmfy5q52" path="res://assets/kara.png" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kqu6x"]
-radius = 26.0
-height = 100.0
+radius = 28.0
+height = 118.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_rkbax")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -25.0
-offset_top = -100.0
-offset_right = 25.0
-color = Color(0.178516, 0.352208, 0.260181, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -51)
-shape = SubResource("CapsuleShape2D_kqu6x")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_smoothed = true
-position_smoothing_enabled = true
-position_smoothing_speed = 2.0
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
-drag_top_margin = 0.6
-editor_draw_drag_margin = true
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_g1dw6")
 
 [node name="JumpArcVisual" type="Node2D" parent="."]
 visible = false
 script = ExtResource("2_rkbax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12, -59)
+shape = SubResource("CapsuleShape2D_kqu6x")

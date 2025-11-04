@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://buhi16xsfdhii"]
+
+[ext_resource type="Script" uid="uid://bi0qx4fevipyh" path="res://camera/Camera2d.cs" id="1_e32tf"]
+
+[node name="Camera2D" type="Camera2D" node_paths=PackedStringArray("Target")]
+limit_smoothed = true
+drag_top_margin = 0.6
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("1_e32tf")
+Target = NodePath("")
