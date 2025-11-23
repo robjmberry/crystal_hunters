@@ -22,59 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://cnx6e7vjqhikh" path="res://assets/kara/right_foot.png" id="19_uw77l"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kqu6x"]
-radius = 30.0
-height = 120.0
-
-[sub_resource type="Animation" id="Animation_x7c3f"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Kara/Skeleton2D/Bone2D/Torso:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(19, -12)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Kara/Skeleton2D/Bone2D/Torso:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Kara/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [-0.035516884]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Kara/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-9, -3)]
-}
+radius = 35.0
+height = 122.0
 
 [sub_resource type="Animation" id="Animation_65viv"]
 resource_name = "Idle"
@@ -83,7 +32,7 @@ step = 0.041666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Kara/Skeleton2D/Bone2D/Torso:position")
+tracks/0/path = NodePath("Kara/Scaling/Skeleton2D/Bone2D/Torso:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -95,19 +44,19 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Kara/Skeleton2D/Bone2D/Torso:rotation")
+tracks/1/path = NodePath("Kara/Scaling/Skeleton2D/Bone2D/Torso:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.5, 1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0.0, -0.026179938779914945, 0.0]
+"values": [0.0, -0.02617993877991494, 0.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Kara/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail:rotation")
+tracks/2/path = NodePath("Kara/Scaling/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -119,7 +68,58 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Kara/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail:position")
+tracks/3/path = NodePath("Kara/Scaling/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-9, -3)]
+}
+
+[sub_resource type="Animation" id="Animation_x7c3f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Kara/Scaling/Skeleton2D/Bone2D/Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(19, -12)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Kara/Scaling/Skeleton2D/Bone2D/Torso:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Kara/Scaling/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.035516884]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Kara/Scaling/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -135,8 +135,9 @@ _data = {
 &"RESET": SubResource("Animation_x7c3f")
 }
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("Visuals")]
 script = ExtResource("1_rkbax")
+Visuals = NodePath("Kara")
 
 [node name="JumpArcVisual" type="Node2D" parent="."]
 visible = false
@@ -146,244 +147,239 @@ script = ExtResource("2_rkbax")
 
 [node name="Kara" type="Node2D" parent="."]
 position = Vector2(-4, -63)
+
+[node name="Scaling" type="Node2D" parent="Kara"]
 scale = Vector2(0.53, 0.53)
 
-[node name="Sprites" type="Node2D" parent="Kara"]
+[node name="Sprites" type="Node2D" parent="Kara/Scaling"]
 metadata/_edit_lock_ = true
 
-[node name="InsideCloak" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(11.8279915, 70.016464)
-rotation = 0.0025016668
-scale = Vector2(0.9999997, 0.9999997)
+[node name="InsideCloak" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(11.822132, 70.0195)
+rotation = 0.0028228615
+scale = Vector2(0.9999998, 0.9999998)
 texture = ExtResource("3_65viv")
 offset = Vector2(-2.425, 0)
 
-[node name="LeftUpperLeg" type="Sprite2D" parent="Kara/Sprites"]
+[node name="LeftUpperLeg" type="Sprite2D" parent="Kara/Scaling/Sprites"]
 position = Vector2(-3.0000005, 68)
 texture = ExtResource("4_x7c3f")
 offset = Vector2(2.605, 13.305)
 
-[node name="RightUpperLeg" type="Sprite2D" parent="Kara/Sprites"]
+[node name="RightUpperLeg" type="Sprite2D" parent="Kara/Scaling/Sprites"]
 position = Vector2(22.999998, 68)
 rotation = 0.028138546
 scale = Vector2(0.99999994, 0.99999994)
 texture = ExtResource("5_bjvpn")
 offset = Vector2(-0.825, 6.17)
 
-[node name="Body" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(16.001354, 55.99561)
-rotation = -0.000321193
-scale = Vector2(0.9999998, 0.9999998)
+[node name="Body" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(16, 55.999992)
+scale = Vector2(0.9999999, 0.9999999)
 texture = ExtResource("9_bjvpn")
 centered = false
 offset = Vector2(-28.85, -58.69)
 
-[node name="RightCloak" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(32.98561, 6.9901657)
-rotation = 0.016901823
-scale = Vector2(0.99999976, 0.99999976)
+[node name="RightCloak" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(32.999996, 6.9999924)
+rotation = 0.017223015
+scale = Vector2(0.9999998, 0.9999998)
 texture = ExtResource("4_ebec5")
 offset = Vector2(-0.62, 33.965)
 
-[node name="LeftCloak" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(4.9856186, 6.999153)
-rotation = 0.0025016684
-scale = Vector2(0.9999997, 0.9999997)
+[node name="LeftCloak" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(5.0000014, 6.9999924)
+rotation = 0.0028228615
+scale = Vector2(0.9999998, 0.9999998)
 texture = ExtResource("5_yllr7")
 offset = Vector2(-10.445, 34.785)
 
-[node name="Gem" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(19.984974, 4.994339)
-rotation = -0.00032119302
-scale = Vector2(0.9999997, 0.9999997)
+[node name="Gem" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(20, 5)
+scale = Vector2(0.99999976, 0.99999976)
 texture = ExtResource("9_s7qer")
 offset = Vector2(0, 7.52)
 
-[node name="Head" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(19.984974, 4.994339)
-rotation = -0.00032119302
-scale = Vector2(0.9999997, 0.9999997)
+[node name="Head" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(20, 5)
+scale = Vector2(0.99999976, 0.99999976)
 texture = ExtResource("3_32hag")
 offset = Vector2(-9.565, -44.2)
 
-[node name="RightEye" type="Sprite2D" parent="Kara/Sprites/Head"]
+[node name="RightEye" type="Sprite2D" parent="Kara/Scaling/Sprites/Head"]
 position = Vector2(32, -44)
 texture = ExtResource("5_e7oew")
 
-[node name="LeftEye" type="Sprite2D" parent="Kara/Sprites/Head"]
+[node name="LeftEye" type="Sprite2D" parent="Kara/Scaling/Sprites/Head"]
 position = Vector2(10, -41)
 texture = ExtResource("4_tqiix")
 
-[node name="PonyTail" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(-51.0468, -93.98283)
-rotation = -0.00096357905
-scale = Vector2(0.9999996, 0.9999996)
+[node name="PonyTail" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(-50.999985, -93.99996)
+scale = Vector2(0.99999964, 0.99999964)
 texture = ExtResource("8_x7c3f")
 offset = Vector2(-11.79, 40.795)
 
-[node name="Hair" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(-42.045837, -90.985725)
-rotation = -0.00032119302
-scale = Vector2(0.9999997, 0.9999997)
+[node name="Hair" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(-41.999985, -90.99998)
+scale = Vector2(0.99999976, 0.99999976)
 texture = ExtResource("6_c35mf")
 offset = Vector2(45.75, 35.58)
 
-[node name="HairTie" type="Sprite2D" parent="Kara/Sprites"]
-position = Vector2(-42.045837, -90.985725)
-rotation = -0.00032119302
-scale = Vector2(0.9999997, 0.9999997)
+[node name="HairTie" type="Sprite2D" parent="Kara/Scaling/Sprites"]
+position = Vector2(-41.999985, -90.99998)
+scale = Vector2(0.99999976, 0.99999976)
 texture = ExtResource("7_65viv")
 offset = Vector2(-2.95, 1.24)
 
-[node name="LeftLowerLeg" type="Sprite2D" parent="Kara/Sprites"]
+[node name="LeftLowerLeg" type="Sprite2D" parent="Kara/Scaling/Sprites"]
 position = Vector2(-3.0000005, 87.99999)
 texture = ExtResource("16_g4c7l")
 offset = Vector2(0, 9.835)
 
-[node name="LeftFoot" type="Sprite2D" parent="Kara/Sprites"]
+[node name="LeftFoot" type="Sprite2D" parent="Kara/Scaling/Sprites"]
 position = Vector2(-5.0000005, 112.99999)
 texture = ExtResource("17_knn7v")
 offset = Vector2(3.645, 2.615)
 
-[node name="RightLowerLeg" type="Sprite2D" parent="Kara/Sprites"]
+[node name="RightLowerLeg" type="Sprite2D" parent="Kara/Scaling/Sprites"]
 position = Vector2(17.999998, 88.99999)
 rotation = 0.028138546
 scale = Vector2(0.99999994, 0.99999994)
 texture = ExtResource("18_7pqkx")
 offset = Vector2(0.73, 8.28)
 
-[node name="RightFoot" type="Sprite2D" parent="Kara/Sprites"]
+[node name="RightFoot" type="Sprite2D" parent="Kara/Scaling/Sprites"]
 position = Vector2(16.240753, 115.96117)
 rotation = 0.028138546
 scale = Vector2(0.99999994, 0.99999994)
 texture = ExtResource("19_uw77l")
 offset = Vector2(3.79, 0)
 
-[node name="Skeleton2D" type="Skeleton2D" parent="Kara"]
+[node name="Skeleton2D" type="Skeleton2D" parent="Kara/Scaling"]
 
-[node name="Bone2D" type="Bone2D" parent="Kara/Skeleton2D"]
+[node name="Bone2D" type="Bone2D" parent="Kara/Scaling/Skeleton2D"]
 position = Vector2(-3, 68)
 rest = Transform2D(1, 0, 0, 1, -3, 68)
 editor_settings/show_bone_gizmo = false
 
-[node name="Torso" type="Bone2D" parent="Kara/Skeleton2D/Bone2D"]
+[node name="Torso" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D"]
 position = Vector2(19, -12)
 scale = Vector2(0.9999999, 0.9999999)
 rest = Transform2D(1, 0, 0, 1, 19, -12)
 editor_settings/show_bone_gizmo = false
 
-[node name="Head" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Torso"]
+[node name="Head" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso"]
 position = Vector2(4, -51)
 scale = Vector2(0.9999999, 0.9999999)
 rest = Transform2D(0.9999999, 0, 0, 0.9999999, 4, -51)
 editor_settings/show_bone_gizmo = false
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso/Head"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Head"]
 remote_path = NodePath("../../../../../Sprites/Head")
 
-[node name="Hair" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Torso/Head"]
+[node name="Hair" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Head"]
 position = Vector2(-62, -96)
 rest = Transform2D(1, 0, 0, 1, -62, -96)
 editor_settings/show_bone_gizmo = false
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso/Head/Hair"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Head/Hair"]
 remote_path = NodePath("../../../../../../Sprites/Hair")
 
-[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso/Head/Hair"]
+[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Head/Hair"]
 remote_path = NodePath("../../../../../../Sprites/HairTie")
 
-[node name="PonyTail" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Torso/Head/Hair"]
+[node name="PonyTail" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Head/Hair"]
 position = Vector2(-9, -3)
 rotation = -0.035516884
 scale = Vector2(0.9999999, 0.9999999)
 rest = Transform2D(1, 0, 0, 1, -9, -3)
 editor_settings/show_bone_gizmo = false
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Head/Hair/PonyTail"]
 remote_path = NodePath("../../../../../../../Sprites/PonyTail")
 
-[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso/Head"]
+[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Head"]
 remote_path = NodePath("../../../../../Sprites/Gem")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso"]
 remote_path = NodePath("../../../../Sprites/Body")
 
-[node name="Cloak_R" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Torso"]
+[node name="Cloak_R" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso"]
 position = Vector2(17, -49)
 rotation = 0.017223014
 rest = Transform2D(1, 0, 0, 1, 17, -49)
 editor_settings/show_bone_gizmo = false
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso/Cloak_R"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Cloak_R"]
 remote_path = NodePath("../../../../../Sprites/RightCloak")
 
-[node name="Cloak_L" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Torso"]
+[node name="Cloak_L" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso"]
 position = Vector2(-11, -49)
 rotation = 0.0028228613
 rest = Transform2D(1, 0, 0, 1, -11, -49)
 editor_settings/show_bone_gizmo = false
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso/Cloak_L"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Cloak_L"]
 remote_path = NodePath("../../../../../Sprites/LeftCloak")
 
-[node name="Cloak_Inner" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Torso/Cloak_L"]
+[node name="Cloak_Inner" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Cloak_L"]
 position = Vector2(7.0000005, 63.000004)
 rest = Transform2D(1, 0, 0, 1, -4, 14)
 editor_settings/show_bone_gizmo = false
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Torso/Cloak_L/Cloak_Inner"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Torso/Cloak_L/Cloak_Inner"]
 remote_path = NodePath("../../../../../../Sprites/InsideCloak")
 
-[node name="Upper_Leg_L" type="Bone2D" parent="Kara/Skeleton2D/Bone2D"]
+[node name="Upper_Leg_L" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D"]
 rest = Transform2D(1, 0, 0, 1, 0, 0)
 editor_settings/show_bone_gizmo = false
 
-[node name="Lower_Leg_L" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_L"]
+[node name="Lower_Leg_L" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_L"]
 position = Vector2(0, 20)
 rest = Transform2D(1, 0, 0, 1, 0, 20)
 editor_settings/show_bone_gizmo = false
 
-[node name="Foot_L" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_L/Lower_Leg_L"]
+[node name="Foot_L" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_L/Lower_Leg_L"]
 position = Vector2(-2, 25)
 rest = Transform2D(1, 0, 0, 1, -2, 25)
 editor_settings/show_bone_gizmo = false
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_L/Lower_Leg_L/Foot_L"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_L/Lower_Leg_L/Foot_L"]
 remote_path = NodePath("../../../../../../Sprites/LeftFoot")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_L/Lower_Leg_L"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_L/Lower_Leg_L"]
 remote_path = NodePath("../../../../../Sprites/LeftLowerLeg")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_L"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_L"]
 remote_path = NodePath("../../../../Sprites/LeftUpperLeg")
 
-[node name="Upper_Leg_R" type="Bone2D" parent="Kara/Skeleton2D/Bone2D"]
+[node name="Upper_Leg_R" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D"]
 position = Vector2(26, 0)
 rotation = 0.028138544
 rest = Transform2D(0.99960417, 0.028134832, -0.028134832, 0.99960417, 26, 0)
 editor_settings/show_bone_gizmo = false
 
-[node name="Lower_Leg_R" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_R"]
+[node name="Lower_Leg_R" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_R"]
 position = Vector2(-4.407189, 21.132357)
 rest = Transform2D(1, 0, 0, 1, -4.407189, 21.132357)
 editor_settings/show_bone_gizmo = false
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_R/Lower_Leg_R"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_R/Lower_Leg_R"]
 remote_path = NodePath("../../../../../Sprites/RightLowerLeg")
 
-[node name="Foot_R" type="Bone2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_R/Lower_Leg_R"]
+[node name="Foot_R" type="Bone2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_R/Lower_Leg_R"]
 position = Vector2(-1, 27)
 rest = Transform2D(1, 0, 0, 1, -1, 27)
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_R/Lower_Leg_R/Foot_R"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_R/Lower_Leg_R/Foot_R"]
 remote_path = NodePath("../../../../../../Sprites/RightFoot")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Skeleton2D/Bone2D/Upper_Leg_R"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Kara/Scaling/Skeleton2D/Bone2D/Upper_Leg_R"]
 remote_path = NodePath("../../../../Sprites/RightUpperLeg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(-2, -60)
+position = Vector2(0, -61)
 shape = SubResource("CapsuleShape2D_kqu6x")
 
 [node name="Reference" type="Sprite2D" parent="."]
