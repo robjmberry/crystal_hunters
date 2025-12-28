@@ -6,9 +6,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("2_pdtm5")]
-position = Vector2(963, 525)
-Acceleration = 1500.0
-Braking = 3000.0
+position = Vector2(704, 64)
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -159,6 +157,12 @@ position = Vector2(960, 576)
 [node name="Block16" parent="Node2D" instance=ExtResource("2_b3oru")]
 position = Vector2(1024, 576)
 
+[node name="Block16" parent="Node2D/Block16" instance=ExtResource("2_b3oru")]
+position = Vector2(64, 0)
+
+[node name="Block16" parent="Node2D/Block16/Block16" instance=ExtResource("2_b3oru")]
+position = Vector2(64, 0)
+
 [node name="Block17" parent="Node2D" instance=ExtResource("2_b3oru")]
 position = Vector2(1216, 576)
 
@@ -279,6 +283,21 @@ position = Vector2(4480, 576)
 [node name="Block51" parent="Node2D" instance=ExtResource("2_b3oru")]
 position = Vector2(4544, 576)
 
+[node name="Block51" parent="Node2D/Block51" instance=ExtResource("2_b3oru")]
+position = Vector2(832, 0)
+
+[node name="Block56" parent="Node2D/Block51/Block51" instance=ExtResource("2_b3oru")]
+position = Vector2(128, 0)
+
+[node name="Block51" parent="Node2D/Block51/Block51" instance=ExtResource("2_b3oru")]
+position = Vector2(256, 0)
+
+[node name="Block56" parent="Node2D/Block51/Block51/Block51" instance=ExtResource("2_b3oru")]
+position = Vector2(64, 0)
+
+[node name="Block57" parent="Node2D/Block51/Block51" instance=ExtResource("2_b3oru")]
+position = Vector2(192, 0)
+
 [node name="Block52" parent="Node2D" instance=ExtResource("2_b3oru")]
 position = Vector2(4608, 576)
 
@@ -293,3 +312,50 @@ position = Vector2(4800, 576)
 
 [node name="Block56" parent="Node2D" instance=ExtResource("2_b3oru")]
 position = Vector2(4864, 576)
+
+[node name="Block56" parent="Node2D/Block56" instance=ExtResource("2_b3oru")]
+position = Vector2(576, 0)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1856.0
+offset_top = 576.0
+offset_right = 1896.0
+offset_bottom = 599.0
+text = "3"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 1856.0
+offset_top = 576.0
+offset_right = 1896.0
+offset_bottom = 599.0
+text = "3"
+
+[node name="Label" type="Label" parent="Label/Label"]
+layout_mode = 0
+offset_left = -1088.0
+offset_top = -576.0
+offset_right = -1048.0
+offset_bottom = -553.0
+text = "4"
+
+[node name="Label" type="Label" parent="Label/Label/Label"]
+layout_mode = 0
+offset_left = 832.0
+offset_right = 872.0
+offset_bottom = 23.0
+text = "5"
+
+[node name="Label" type="Label" parent="Label/Label/Label/Label"]
+layout_mode = 0
+offset_left = 832.0
+offset_right = 872.0
+offset_bottom = 23.0
+text = "6"
+
+[node name="Label" type="Label" parent="Label/Label/Label/Label/Label"]
+layout_mode = 0
+offset_left = 832.0
+offset_right = 872.0
+offset_bottom = 23.0
+text = "7"
