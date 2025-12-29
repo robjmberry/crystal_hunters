@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8dgvddunp1rf"]
+[gd_scene load_steps=6 format=3 uid="uid://c8dgvddunp1rf"]
 
 [ext_resource type="PackedScene" uid="uid://b0sgwqv7g1y0y" path="res://levels/Block.tscn" id="2_b3oru"]
 [ext_resource type="PackedScene" uid="uid://bmq4cae7msgpi" path="res://player/player.tscn" id="2_pdtm5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pdtm5"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_b3oru"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_ua5ty"]
+font_size = 32
 
 [node name="Node2D" type="Node2D"]
 
@@ -176,19 +185,19 @@ position = Vector2(1344, 576)
 position = Vector2(1408, 576)
 
 [node name="Block90" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(1408, 512)
+position = Vector2(1152, 512)
 
 [node name="Block91" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(1408, 448)
+position = Vector2(1152, 448)
 
 [node name="Block92" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(1472, 448)
+position = Vector2(1216, 448)
 
 [node name="Block93" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(1536, 448)
+position = Vector2(1280, 448)
 
 [node name="Block94" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(1536, 512)
+position = Vector2(1280, 512)
 
 [node name="Block21" parent="Node2D" instance=ExtResource("2_b3oru")]
 position = Vector2(1536, 576)
@@ -341,17 +350,21 @@ text = "4"
 
 [node name="Label" type="Label" parent="Label/Label/Label"]
 layout_mode = 0
-offset_left = 832.0
-offset_right = 872.0
-offset_bottom = 23.0
-text = "5"
+offset_left = 704.0
+offset_right = 931.0
+offset_bottom = 45.0
+text = "5
+
+ (HARD JUMP)"
+label_settings = SubResource("LabelSettings_pdtm5")
 
 [node name="Label" type="Label" parent="Label/Label/Label/Label"]
 layout_mode = 0
 offset_left = 832.0
-offset_right = 872.0
+offset_right = 896.0
 offset_bottom = 23.0
 text = "6"
+label_settings = SubResource("LabelSettings_b3oru")
 
 [node name="Label" type="Label" parent="Label/Label/Label/Label/Label"]
 layout_mode = 0
@@ -359,3 +372,4 @@ offset_left = 832.0
 offset_right = 872.0
 offset_bottom = 23.0
 text = "7"
+label_settings = SubResource("LabelSettings_ua5ty")
