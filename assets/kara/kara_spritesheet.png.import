@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djxeuxaqn5c5y"
-path="res://.godot/imported/head.png-4b2e17d239fd60fb482f1b2cec75d791.ctex"
+uid="uid://nm5518otuko4"
+path="res://.godot/imported/kara_spritesheet.png-2f65786c4b82760861710f7db7409436.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kara/head.png"
-dest_files=["res://.godot/imported/head.png-4b2e17d239fd60fb482f1b2cec75d791.ctex"]
+source_file="res://assets/kara/kara_spritesheet.png"
+dest_files=["res://.godot/imported/kara_spritesheet.png-2f65786c4b82760861710f7db7409436.ctex"]
 
 [params]
 

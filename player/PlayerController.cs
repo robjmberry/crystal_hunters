@@ -93,9 +93,11 @@ public partial class PlayerController : CharacterBody2D
 
         if (direction != 0f)
         {
-            Visuals.FlipH = direction < 0f;
-            FacingRightCollision.Disabled = direction < 0f;
-            FacingLeftCollision.Disabled = direction > 0f;
+         
+            Visuals.FlipH= direction < 0;
+            FacingLeftCollision.Disabled = direction > 0;
+            FacingRightCollision.Disabled = direction < 0;
+
         }
 
         var velocity = Velocity;
