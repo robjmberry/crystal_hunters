@@ -1,15 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8dgvddunp1rf"]
+[gd_scene load_steps=5 format=3 uid="uid://c8dgvddunp1rf"]
 
 [ext_resource type="PackedScene" uid="uid://b0sgwqv7g1y0y" path="res://levels/Block.tscn" id="2_b3oru"]
 [ext_resource type="PackedScene" uid="uid://bmq4cae7msgpi" path="res://player/player.tscn" id="2_pdtm5"]
+[ext_resource type="PackedScene" uid="uid://cb7ygjk7ua4l7" path="res://Entites/Collectables/CrystalFragment/CrystalFragment.tscn" id="3_b3oru"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pdtm5"]
-font_size = 32
-
-[sub_resource type="LabelSettings" id="LabelSettings_b3oru"]
-font_size = 32
-
-[sub_resource type="LabelSettings" id="LabelSettings_ua5ty"]
 font_size = 32
 
 [node name="Node2D" type="Node2D"]
@@ -284,46 +279,51 @@ position = Vector2(3904, 576)
 position = Vector2(3968, 576)
 
 [node name="Block49" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(4416, 576)
+position = Vector2(3968, 512)
 
 [node name="Block50" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(4480, 576)
+position = Vector2(3968, 448)
 
 [node name="Block51" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(4544, 576)
+position = Vector2(3968, 384)
 
 [node name="Block51" parent="Node2D/Block51" instance=ExtResource("2_b3oru")]
-position = Vector2(832, 0)
+position = Vector2(0, -64)
 
 [node name="Block56" parent="Node2D/Block51/Block51" instance=ExtResource("2_b3oru")]
-position = Vector2(128, 0)
+position = Vector2(0, -64)
 
 [node name="Block51" parent="Node2D/Block51/Block51" instance=ExtResource("2_b3oru")]
-position = Vector2(256, 0)
+position = Vector2(0, -192)
 
 [node name="Block56" parent="Node2D/Block51/Block51/Block51" instance=ExtResource("2_b3oru")]
-position = Vector2(64, 0)
+position = Vector2(0, -64)
 
 [node name="Block57" parent="Node2D/Block51/Block51" instance=ExtResource("2_b3oru")]
-position = Vector2(192, 0)
+position = Vector2(0, -128)
 
 [node name="Block52" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(4608, 576)
-
-[node name="Block53" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(4736, 576)
+position = Vector2(3968, 0)
 
 [node name="Block54" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(4672, 576)
+position = Vector2(4032, 0)
 
-[node name="Block55" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(4800, 576)
+[node name="Label2" type="Label" parent="."]
+offset_left = 3328.0
+offset_top = 576.0
+offset_right = 3555.0
+offset_bottom = 717.0
+text = "5
 
-[node name="Block56" parent="Node2D" instance=ExtResource("2_b3oru")]
-position = Vector2(4864, 576)
+ (HARD JUMP)"
+label_settings = SubResource("LabelSettings_pdtm5")
 
-[node name="Block56" parent="Node2D/Block56" instance=ExtResource("2_b3oru")]
-position = Vector2(576, 0)
+[node name="Label3" type="Label" parent="."]
+offset_left = 2624.0
+offset_top = 576.0
+offset_right = 2664.0
+offset_bottom = 599.0
+text = "4"
 
 [node name="Label" type="Label" parent="."]
 offset_left = 1856.0
@@ -332,44 +332,35 @@ offset_right = 1896.0
 offset_bottom = 599.0
 text = "3"
 
-[node name="Label" type="Label" parent="Label"]
-layout_mode = 0
-offset_left = 1856.0
-offset_top = 576.0
-offset_right = 1896.0
-offset_bottom = 599.0
-text = "3"
+[node name="SmallCrystal9" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(1408, 512)
 
-[node name="Label" type="Label" parent="Label/Label"]
-layout_mode = 0
-offset_left = -1088.0
-offset_top = -576.0
-offset_right = -1048.0
-offset_bottom = -553.0
-text = "4"
+[node name="SmallCrystal10" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(1664, 512)
 
-[node name="Label" type="Label" parent="Label/Label/Label"]
-layout_mode = 0
-offset_left = 704.0
-offset_right = 931.0
-offset_bottom = 45.0
-text = "5
+[node name="SmallCrystal11" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(1536, 512)
 
- (HARD JUMP)"
-label_settings = SubResource("LabelSettings_pdtm5")
+[node name="SmallCrystal8" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(3648, 512)
 
-[node name="Label" type="Label" parent="Label/Label/Label/Label"]
-layout_mode = 0
-offset_left = 832.0
-offset_right = 896.0
-offset_bottom = 23.0
-text = "6"
-label_settings = SubResource("LabelSettings_b3oru")
+[node name="SmallCrystal7" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(3904, 512)
 
-[node name="Label" type="Label" parent="Label/Label/Label/Label/Label"]
-layout_mode = 0
-offset_left = 832.0
-offset_right = 872.0
-offset_bottom = 23.0
-text = "7"
-label_settings = SubResource("LabelSettings_ua5ty")
+[node name="SmallCrystal6" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(120, 193)
+
+[node name="SmallCrystal5" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(2176, 448)
+
+[node name="SmallCrystal4" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(3776, 512)
+
+[node name="SmallCrystal3" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(1254, 392)
+
+[node name="SmallCrystal2" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(2944, 448)
+
+[node name="SmallCrystal" parent="." instance=ExtResource("3_b3oru")]
+position = Vector2(0, -128)

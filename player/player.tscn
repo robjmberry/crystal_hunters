@@ -117,6 +117,8 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("Visuals", "AnimPlayer", "FacingRightCollision", "FacingLeftCollision")]
+collision_layer = 2
+collision_mask = 13
 script = ExtResource("1_knn7v")
 Visuals = NodePath("Visuals")
 AnimPlayer = NodePath("AnimationPlayer")
