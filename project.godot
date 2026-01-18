@@ -28,10 +28,6 @@ window/size/viewport_height=1080
 
 project/assembly_name="crystal hunters"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
-
 [input]
 
 jump={
