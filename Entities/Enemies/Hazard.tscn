@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://8wf3yckpkyr4"]
+
+[ext_resource type="Script" uid="uid://bqm7pddc1oer1" path="res://Entities/Enemies/Hazard.cs" id="1_vkn83"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3gbn"]
+size = Vector2(63, 63)
+
+[node name="Hazard" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_vkn83")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(31.5, -32.5)
+shape = SubResource("RectangleShape2D_k3gbn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_top = -64.0
+offset_right = 64.0
+color = Color(1, 0.17000002, 0.17000002, 1)

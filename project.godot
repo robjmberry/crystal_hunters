@@ -19,6 +19,10 @@ run/main_scene="uid://c8dgvddunp1rf"
 config/features=PackedStringArray("4.5", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+RespawnManager="*res://Managers/RespawnManager.cs"
+
 [display]
 
 window/size/viewport_width=1920

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3lm443som4hb"]
+
+[ext_resource type="PackedScene" uid="uid://8wf3yckpkyr4" path="res://Entities/Enemies/Hazard.tscn" id="1_nloxs"]
+
+[node name="Hazard" instance=ExtResource("1_nloxs")]
+DamageAmount = 1
