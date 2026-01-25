@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ci3x7uxyrg8em"
-path="res://.godot/imported/CrystalFragment.png-660378aea8c20c65925cf294b4a69c3b.ctex"
+path="res://.godot/imported/CrystalFragment.png-02905c37f10d3e1e12589e2d2c8e4834.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entites/Collectables/CrystalFragment/CrystalFragment.png"
-dest_files=["res://.godot/imported/CrystalFragment.png-660378aea8c20c65925cf294b4a69c3b.ctex"]
+source_file="res://Entities/Collectables/CrystalFragment/CrystalFragment.png"
+dest_files=["res://.godot/imported/CrystalFragment.png-02905c37f10d3e1e12589e2d2c8e4834.ctex"]
 
 [params]
 

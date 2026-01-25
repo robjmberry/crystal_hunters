@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://le2tfli4lo3q"
-path="res://.godot/imported/GlowCircle64.png-07b030bd3a7e83348b3326978a3ab9fc.ctex"
+path="res://.godot/imported/GlowCircle64.png-864348c9b4f6c8299637ae3e9da89a22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entites/Collectables/CrystalFragment/GlowCircle64.png"
-dest_files=["res://.godot/imported/GlowCircle64.png-07b030bd3a7e83348b3326978a3ab9fc.ctex"]
+source_file="res://Entities/Collectables/CrystalFragment/GlowCircle64.png"
+dest_files=["res://.godot/imported/GlowCircle64.png-864348c9b4f6c8299637ae3e9da89a22.ctex"]
 
 [params]
 

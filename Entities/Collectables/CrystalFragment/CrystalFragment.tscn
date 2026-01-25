@@ -1,9 +1,9 @@
 [gd_scene load_steps=14 format=3 uid="uid://cb7ygjk7ua4l7"]
 
-[ext_resource type="Script" uid="uid://bkgqpos6dj2lc" path="res://Entites/Collectables/CrystalFragment/CrystalFragment.cs" id="1_7ysl3"]
-[ext_resource type="Shader" uid="uid://ct2aov7m5gh85" path="res://Entites/Collectables/CrystalFragment/glimmer.gdshader" id="2_06nom"]
-[ext_resource type="Texture2D" uid="uid://ci3x7uxyrg8em" path="res://Entites/Collectables/CrystalFragment/CrystalFragment.png" id="2_mu21s"]
-[ext_resource type="Texture2D" uid="uid://le2tfli4lo3q" path="res://Entites/Collectables/CrystalFragment/GlowCircle64.png" id="4_ao5ge"]
+[ext_resource type="Script" uid="uid://bkgqpos6dj2lc" path="res://Entities/Collectables/CrystalFragment/CrystalFragment.cs" id="1_7ysl3"]
+[ext_resource type="Shader" uid="uid://ct2aov7m5gh85" path="res://Entities/Collectables/CrystalFragment/glimmer.gdshader" id="2_06nom"]
+[ext_resource type="Texture2D" uid="uid://ci3x7uxyrg8em" path="res://Entities/Collectables/CrystalFragment/CrystalFragment.png" id="2_mu21s"]
+[ext_resource type="Texture2D" uid="uid://le2tfli4lo3q" path="res://Entities/Collectables/CrystalFragment/GlowCircle64.png" id="4_ao5ge"]
 [ext_resource type="AudioStream" uid="uid://bmpad6u674u4w" path="res://assets/audio/confirmation_002.ogg" id="5_jx2bd"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_t0dn4"]
