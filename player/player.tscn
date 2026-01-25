@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://bmq4cae7msgpi"]
+[gd_scene load_steps=12 format=3 uid="uid://bmq4cae7msgpi"]
 
 [ext_resource type="Script" uid="uid://caw78l5xb31wn" path="res://player/PlayerController.cs" id="1_knn7v"]
 [ext_resource type="Texture2D" uid="uid://nm5518otuko4" path="res://assets/kara/kara_spritesheet.png" id="2_rkbax"]
+[ext_resource type="PackedScene" uid="uid://c86bf52qf2y8o" path="res://Health/HealthManager.tscn" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kqu6x"]
 radius = 24.009422
@@ -116,7 +117,7 @@ _data = {
 &"Run": SubResource("Animation_1so5t")
 }
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("Visuals", "AnimPlayer", "FacingRightCollision", "FacingLeftCollision")]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("Visuals", "AnimPlayer", "FacingRightCollision", "FacingLeftCollision", "HealthManager")]
 collision_layer = 2
 collision_mask = 13
 script = ExtResource("1_knn7v")
@@ -124,6 +125,7 @@ Visuals = NodePath("Visuals")
 AnimPlayer = NodePath("AnimationPlayer")
 FacingRightCollision = NodePath("CollisionShape2D_R")
 FacingLeftCollision = NodePath("CollisionShape2D_L")
+HealthManager = NodePath("HealthManager")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -148,3 +150,5 @@ vframes = 5
 libraries = {
 &"": SubResource("AnimationLibrary_tqiix")
 }
+
+[node name="HealthManager" parent="." instance=ExtResource("3_g1dw6")]

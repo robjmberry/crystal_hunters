@@ -1,11 +1,13 @@
 using System.Collections.Generic;
+using CrystalHunters.Health;
+using CrystalHunters.Managers;
 using CrystalHunters.Player.States;
 using CrystalHunters.StateMachine;
 using Godot;
 
 namespace CrystalHunters.Player;
 
-public partial class PlayerController : CharacterBody2D
+public partial class PlayerController : CharacterBody2D, ICombatDamageable, IHazardDamageable
 {
     [ExportCategory("Movement Metrics")]
      [Export] public float MoveSpeed { get; set; } = 500.0f;
@@ -26,6 +28,10 @@ public partial class PlayerController : CharacterBody2D
     
     [Export] public CollisionShape2D FacingRightCollision { get; set; }
     [Export] public CollisionShape2D FacingLeftCollision { get; set; }
+    
+    [Export] public HealthManager HealthManager { get; set; }
+    
+    public RespawnManager RespawnManager { get; private set; }
 
     
     // --- THIS IS THE PART YOU WERE MISSING ---
@@ -37,6 +43,8 @@ public partial class PlayerController : CharacterBody2D
     
     public Timer CoyoteTimer { get; private set; }
     public Timer JumpBufferTimer { get; private set; }
+    
+    public Vector2 SafeLocation { get; set; }
 
     private StateMachine<PlayerController> _stateMachine;
     
@@ -54,8 +62,23 @@ public partial class PlayerController : CharacterBody2D
         AddChild(CoyoteTimer);
         AddChild((JumpBufferTimer));
 
-        var states = new List<State<PlayerController>> {  new IdleState(), new FallState(), new RunState(), new JumpState(), new LandingState()  };
+        var states = new List<State<PlayerController>> {  new IdleState(), new FallState(), new RunState(), new JumpState(), new LandingState(), new RespawnState()  };
         _stateMachine = new StateMachine<PlayerController>(this, states, states[0]);
+
+        HealthManager.HealthChanged += (health, maxHealth) => GD.Print($"Health: {health} / {maxHealth}");
+        HealthManager.Died += () =>
+        {
+            //exit the game
+            GetTree().Quit();
+        };
+        
+        RespawnManager = GetNode<RespawnManager>("/root/RespawnManager");
+        
+    }
+
+    public void TriggerRespawn()
+    {
+        RespawnManager.StartRespawn(this, SafeLocation, () => _stateMachine.ChangeState("Idle"));
     }
 
     public override void _PhysicsProcess(double delta)
@@ -107,4 +130,15 @@ public partial class PlayerController : CharacterBody2D
     }
     
     private float Gravity() => Velocity.Y < 0 ? _gravityUp : _gravityDown;
+
+    public void TakeDamageFromCombat(int amountOfDamage, Vector2 sourceOfDamage)
+    {
+        HealthManager.Damage(amountOfDamage);
+    }
+
+    public void TakeDamageFromHazard(int amountOfDamage)
+    {
+        HealthManager.Damage(amountOfDamage);
+        _stateMachine.ChangeState("Respawn"); 
+    }
 }
