@@ -14,10 +14,11 @@ public partial class RespawnManager : Node
         
         await ToSignal(GetTree().CreateTimer(0.3f), SceneTreeTimer.SignalName.Timeout);
         who.GlobalPosition = location;
-
+        afterRespawn();
+        
         await _screenManager.FadeIn();
         
-        afterRespawn();
+       
     }
 
     public void RegisterScreenManager(ScreenManager screenManager)
